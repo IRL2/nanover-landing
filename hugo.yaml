@@ -1,0 +1,42 @@
+baseURL : 'https://nanover.org/'
+title : 'NanoVer'
+theme : 'PaperMod'
+
+languageCode : 'en-us'
+
+enableRobotsTXT: true
+
+services:
+  googleAnalytics:
+    ID: G-XXXXXXXXX
+
+copyright: 'Intangible Realities Lab | University of Santiago de Compostela | University of Bristol | and other contributors'
+# label.text: 'asd'
+
+params:
+  env: production
+  title: NanoVer
+  label:
+    # icon: '/nanover-logo.png'
+    iconHeight: 85
+    text: 'NanoVer'
+
+  disableThemeToggle: true
+  defaultTheme: light
+
+  description:
+  keywords: [MD, molecular dynamics, VR, virtual reality]
+  images: ['assets/opengraph-card.png']
+
+  contact:
+    email: intangible.realities.lab+nanover@gmail.com
+  
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: "https://nanover.org/favicon.ico"
+    favicon16x16: "https://nanover.org/favicon-16.png"
+    favicon32x32: "https://nanover.org/favicon-32.png"
+    apple_touch_icon: "https://nanover.org/favicon-apple.png"
+    safari_pinned_tab: "https://nanover.org/favicon.svg"
+  
