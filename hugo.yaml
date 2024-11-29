@@ -2,6 +2,8 @@ baseURL : 'https://nanover.org/'
 title : 'NanoVer'
 theme : 'PaperMod'
 
+publishDir : 'docs'
+
 languageCode : 'en-us'
 
 enableRobotsTXT: true
