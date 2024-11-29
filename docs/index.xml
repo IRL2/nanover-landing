@@ -1,1 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Landing on NanoVer</title><link>https://irl2.github.io/nanover-landing/</link><description>Recent content in Landing on NanoVer</description><image><title>NanoVer</title><url>https://irl2.github.io/nanover-landing/assets/opengraph-card.png</url><link>https://irl2.github.io/nanover-landing/assets/opengraph-card.png</link></image><generator>Hugo -- 0.139.2</generator><language>en-us</language><copyright>Intangible Realities Lab | University of Santiago de Compostela | University of Bristol | and other contributors</copyright><lastBuildDate/><atom:link href="https://irl2.github.io/nanover-landing/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Landing on NanoVer</title>
+    <link>https://irl2.github.io/nanover-landing/</link>
+    <description>Recent content in Landing on NanoVer</description>
+    <image>
+      <title>NanoVer</title>
+      <url>https://irl2.github.io/nanover-landing/assets/opengraph-card.png</url>
+      <link>https://irl2.github.io/nanover-landing/assets/opengraph-card.png</link>
+    </image>
+    <generator>Hugo -- 0.139.2</generator>
+    <language>en-us</language>
+    <copyright>Intangible Realities Lab | University of Santiago de Compostela | University of Bristol | and other contributors</copyright>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="https://irl2.github.io/nanover-landing/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
