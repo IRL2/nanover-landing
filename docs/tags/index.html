@@ -28,7 +28,12 @@
         }
 
     </style>
-</noscript>
+</noscript><link rel="stylesheet" href="css/custom.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap" rel="stylesheet">
+
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXX"></script>
       <script>
         var doNotTrack = false;
@@ -76,13 +81,7 @@
 <ul class="terms-tags">
 </ul>
     </main>
-    <link rel="stylesheet" href="css/custom.css">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap" rel="stylesheet">
-
-<footer class="nfooter">
+    <footer class="nfooter">
     <div class="nfooter-content">
 
         <div class="nfooter-top-text">
@@ -109,6 +108,112 @@
             &copy; Copyright 2024, Intangible Realities Lab | University of Santiago de Compostela | University of Bristol | and other contributors.
         </div>
     </div>
-  </footer></body>
+  </footer><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.11.2/lib/p5.min.js"></script>
+
+<div id="ghost"><img src="ghost.png"></div>
+
+<script>
+
+    const particle = document.querySelector('#ghost img');
+    const ANIM_DURATION = 25
+    const ANIM_COOLDOWN = ANIM_DURATION * 1.5
+
+    function restartAnimation() {
+        var offset = Math.random() * (innerWidth / 3 * 2)
+        document.documentElement.style.setProperty('--offset', offset+'px');
+        console.log(offset)
+
+        particle.style.animation = 'none';
+
+        setTimeout(() => {
+            particle.style.animation = `
+                floatUp ${ANIM_DURATION}s linear, 
+                swing ${ANIM_DURATION}s ease-in-out, 
+                rotate ${ANIM_DURATION}s ease-in-out`;
+        }, 10);
+    }
+
+    setInterval(()=>{
+        console.log("restart anim");
+        restartAnimation();
+    }, ANIM_COOLDOWN * 1000);
+
+</script>
+
+<style>
+    :root {
+        --rotate-angle: 10deg;  
+        --animation-speed: 5s;  
+    }
+
+    #ghost {
+        z-index: -1000;
+        position: absolute;
+        width: 30%;
+        height: 100%;
+        overflow: hidden;
+        top: 0px;
+        left: var(--offset);
+    }
+
+    #ghost img {
+        position: absolute;
+        left: 50%;
+        filter: brightness(0.7);
+        opacity: 0;
+        overflow: hidden;
+    }
+
+    @keyframes floatUp {
+        0% {
+            bottom: -50px;  
+            opacity: 0;     
+        }
+        20% {
+            opacity: 1;     
+        }
+        80% {
+            opacity: 1;     
+        }
+        100% {
+            bottom: 100%;   
+            opacity: 0;     
+        }
+    }
+
+     
+    @keyframes swing {
+        0% {
+            left: 10%;
+        }
+        50% {
+            left: 90%;
+        }
+        100% {
+            left: 10%;
+        }
+    }
+
+    @keyframes rotate {
+        0% {
+            transform: translateX(-50%) rotate(0deg);  
+        }
+        25% {
+            transform: translateX(-50%) rotate(60deg);  
+        }
+        50% {
+            transform: translateX(-50%) rotate(120deg);  
+        }
+        75% {
+            transform: translateX(-50%) rotate(220deg);  
+        }
+        100% {
+            transform: translateX(-50%) rotate(360deg);  
+        }
+    }
+
+</style>
+
+</body>
 
 </html>
