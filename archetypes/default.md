@@ -5,4 +5,4 @@ title = '{{ replace .File.ContentBaseName "-" " " | title }}'
 +++
 
 
-{{ partial "footer.html" . }}
+<!-- {{ partial "footerx.html" . }} -->
