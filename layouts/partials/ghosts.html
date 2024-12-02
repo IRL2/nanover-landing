@@ -1,0 +1,105 @@
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.11.2/lib/p5.min.js"></script>
+
+<div id="ghost"><img src="ghost.png"></div>
+
+<script>
+
+    const particle = document.querySelector('#ghost img');
+    const ANIM_DURATION = 25
+    const ANIM_COOLDOWN = ANIM_DURATION * 1.5
+
+    function restartAnimation() {
+        var offset = Math.random() * (innerWidth / 3 * 2)
+        document.documentElement.style.setProperty('--offset', offset+'px');
+        console.log(offset)
+
+        particle.style.animation = 'none';
+
+        setTimeout(() => {
+            particle.style.animation = `
+                floatUp ${ANIM_DURATION}s linear, 
+                swing ${ANIM_DURATION}s ease-in-out, 
+                rotate ${ANIM_DURATION}s ease-in-out`;
+        }, 10);
+    }
+
+    setInterval(()=>{
+        console.log("restart anim");
+        restartAnimation();
+    }, ANIM_COOLDOWN * 1000);
+
+</script>
+
+<style>
+    :root {
+        --rotate-angle: 10deg; /* Default rotation angle */
+        --animation-speed: 5s; /* Default animation speed */
+    }
+
+    #ghost {
+        z-index: -1000;
+        position: absolute;
+        width: 30%;
+        height: 100%;
+        overflow: hidden;
+        top: 0px;
+        left: var(--offset);
+    }
+
+    #ghost img {
+        position: absolute;
+        left: 50%;
+        filter: brightness(0.7);
+        opacity: 0;
+        overflow: hidden;
+    }
+
+    @keyframes floatUp {
+        0% {
+            bottom: -50px; /* Start below the viewport */
+            opacity: 0;    /* Initially invisible */
+        }
+        20% {
+            opacity: 1;    /* Fade in */
+        }
+        80% {
+            opacity: 1;    /* Stay visible */
+        }
+        100% {
+            bottom: 100%;  /* End above the viewport */
+            opacity: 0;    /* Fade out */
+        }
+    }
+
+    /* Horizontal swing movement */
+    @keyframes swing {
+        0% {
+            left: 10%;
+        }
+        50% {
+            left: 90%;
+        }
+        100% {
+            left: 10%;
+        }
+    }
+
+    @keyframes rotate {
+        0% {
+            transform: translateX(-50%) rotate(0deg); /* No rotation */
+        }
+        25% {
+            transform: translateX(-50%) rotate(60deg); /* Slight rotation clockwise */
+        }
+        50% {
+            transform: translateX(-50%) rotate(120deg); /* Back to no rotation */
+        }
+        75% {
+            transform: translateX(-50%) rotate(220deg); /* Slight rotation counterclockwise */
+        }
+        100% {
+            transform: translateX(-50%) rotate(360deg); /* Back to no rotation */
+        }
+    }
+
+</style>

@@ -10,7 +10,7 @@ https://nanover.org
 
 To build run:
 ```
-hugo --gc --minify
+hugo --gc --cleanDestinationDir
 ```
 
 This will generate output website on `/doc` folder, where github will publish it.
