@@ -11,11 +11,11 @@
 <meta name="author" content="">
 <link rel="canonical" href="https://irl2.github.io/nanover-landing/categories/">
 <link crossorigin="anonymous" href="/nanover-landing/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://nanover.org/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://nanover.org/favicon-16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://nanover.org/favicon-32.png">
-<link rel="apple-touch-icon" href="https://nanover.org/favicon-apple.png">
-<link rel="mask-icon" href="https://nanover.org/favicon.svg">
+<link rel="icon" href="https://irl2.github.io/nanover-landing/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://irl2.github.io/nanover-landing/favicon-16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://irl2.github.io/nanover-landing/favicon-32.png">
+<link rel="apple-touch-icon" href="https://irl2.github.io/nanover-landing/favicon-apple.png">
+<link rel="mask-icon" href="https://irl2.github.io/nanover-landing/favicon.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
 <link rel="alternate" type="application/rss+xml" href="https://irl2.github.io/nanover-landing/categories/index.xml">
@@ -108,20 +108,17 @@
             &copy; Copyright 2024, Intangible Realities Lab | University of Santiago de Compostela | University of Bristol | and other contributors.
         </div>
     </div>
-  </footer><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.11.2/lib/p5.min.js"></script>
-
+  </footer>
 <div id="ghost"><img src="ghost.png"></div>
 
 <script>
-
-    const particle = document.querySelector('#ghost img');
+    const particle = document.querySelector('#ghost img')
     const ANIM_DURATION = 25
     const ANIM_COOLDOWN = ANIM_DURATION * 1.5
 
     function restartAnimation() {
         var offset = Math.random() * (innerWidth / 3 * 2)
-        document.documentElement.style.setProperty('--offset', offset+'px');
-        console.log(offset)
+        document.documentElement.style.setProperty('--offset', offset+'px')
 
         particle.style.animation = 'none';
 
@@ -129,23 +126,16 @@
             particle.style.animation = `
                 floatUp ${ANIM_DURATION}s linear, 
                 swing ${ANIM_DURATION}s ease-in-out, 
-                rotate ${ANIM_DURATION}s ease-in-out`;
+                rotate ${ANIM_DURATION}s ease-in-out`
         }, 10);
     }
 
     setInterval(()=>{
-        console.log("restart anim");
-        restartAnimation();
-    }, ANIM_COOLDOWN * 1000);
-
+        restartAnimation()
+    }, ANIM_COOLDOWN * 1000)
 </script>
 
 <style>
-    :root {
-        --rotate-angle: 10deg;  
-        --animation-speed: 5s;  
-    }
-
     #ghost {
         z-index: -1000;
         position: absolute;
@@ -166,18 +156,18 @@
 
     @keyframes floatUp {
         0% {
-            bottom: -50px;  
-            opacity: 0;     
+            bottom: -50px;
+            opacity: 0;
         }
         20% {
-            opacity: 1;     
+            opacity: 1;
         }
         80% {
-            opacity: 1;     
+            opacity: 1;
         }
         100% {
-            bottom: 100%;   
-            opacity: 0;     
+            bottom: 100%;
+            opacity: 0;
         }
     }
 
@@ -196,22 +186,21 @@
 
     @keyframes rotate {
         0% {
-            transform: translateX(-50%) rotate(0deg);  
+            transform: translateX(-50%) rotate(0deg);
         }
         25% {
-            transform: translateX(-50%) rotate(60deg);  
+            transform: translateX(-50%) rotate(60deg);
         }
         50% {
-            transform: translateX(-50%) rotate(120deg);  
+            transform: translateX(-50%) rotate(120deg);
         }
         75% {
-            transform: translateX(-50%) rotate(220deg);  
+            transform: translateX(-50%) rotate(220deg);
         }
         100% {
-            transform: translateX(-50%) rotate(360deg);  
+            transform: translateX(-50%) rotate(360deg);
         }
     }
-
 </style>
 
 </body>
