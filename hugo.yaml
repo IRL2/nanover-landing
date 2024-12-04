@@ -36,9 +36,9 @@ params:
   assets:
     # disableHLJS: true # to disable highlight.js
     disableFingerprinting: true
-    favicon: "https://nanover.org/favicon.ico"
-    favicon16x16: "https://nanover.org/favicon-16.png"
-    favicon32x32: "https://nanover.org/favicon-32.png"
-    apple_touch_icon: "https://nanover.org/favicon-apple.png"
-    safari_pinned_tab: "https://nanover.org/favicon.svg"
+    favicon: "favicon.ico"
+    favicon16x16: "favicon-16.png"
+    favicon32x32: "favicon-32.png"
+    apple_touch_icon: "favicon-apple.png"
+    safari_pinned_tab: "favicon.svg"
   

@@ -11,9 +11,7 @@ title = 'Landing'
 
 ![](nanover3.webp)
 
-It is a client-server application for collaborative interactive molecular dynamics simulations in virtual reality (iMD-VR).
-
-Consists of a python web server connected a physics engine (e.g. OpenMM), jupyter notebooks and a Unity VR client.
+It is a client-server application for collaborative interactive molecular dynamics simulations in virtual reality (iMD-VR). NanoVer consists of a python web server connected to a physics engine (e.g. OpenMM), a jupyter notebook client and a Unity VR client.
 
 ---
 
