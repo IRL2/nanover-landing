@@ -7,11 +7,9 @@ title = 'Landing'
 
 <!-- # NanoVer -->
 
-**NanoVer** is a free, open-source and flexible software for building multi-user virtual reality applications for molecular systems.
+**NanoVer** is a free, open-source and flexible software for collaborative interactive molecular dynamics simulations in virtual reality (iMD-VR). NanoVer combines the power of jupyter notebooks, ASE & OpenMM molecular dynamics engines, and Unity for VR.
 
 ![](nanover3.webp)
-
-It is a client-server application for collaborative interactive molecular dynamics simulations in virtual reality (iMD-VR). NanoVer consists of a python web server connected to a physics engine (e.g. OpenMM), a jupyter notebook client and a Unity VR client.
 
 ---
 
