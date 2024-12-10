@@ -37,8 +37,17 @@ body {
     transform: none !important;
 }
 
+.main {
+    padding-top: 0%;
+}
+
 .post-content p:has(img) {
     text-align: -webkit-center;
+}
+
+.post-content img {
+    max-width: 100%;
+    min-width: -webkit-fill-available;
 }
 
 .post-content p a {
