@@ -59,6 +59,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
+          name: upload-public
           path: ./public
 
   # Deployment job
