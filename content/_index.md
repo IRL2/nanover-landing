@@ -27,13 +27,13 @@ Contact us by [email](mailto:intangible.realities.lab+nanover@gmail.com).
 
 ### Latest publications
 
+> Wonnacott, M. D., Toledo Castro, L. E, Stroud, H. J, Aisa, L., Dhouioui, M., Roebuck Williams, R., Protopopov, D., Sobrado, S., Glowacki, D. R (2026). NanoVer: An open-source framework for interactive molecular dynamics in extended reality (iMD-XR) on commodity hardware.
+> \
+> https://doi.org/10.48550/arXiv.2606.30678
+
 > Stroud, H. J., Wonnacott, M. D., Barnoud, J., Roebuck Williams, R., Dhouioui, M., McSloy, A., Aisa, L., Toledo, L. E., Bates, P., Mulholland, A. J., & Glowacki, D. R. (2025). NanoVer Server: A Python Package for Serving Real-Time Multi-User Interactive Molecular Dynamics in Virtual Reality. *Journal of Open Source Software*, *10* (110), 8118. 
 > \
 > https://doi.org/10.21105/joss.08118
-
-> Deeks, H. M., Zinovjev, K., Barnoud, J., Mulholland, A. J., van der Kamp, M. W., & Glowacki, D. R. (2023). Free energy along drug-protein binding pathways interactively sampled in virtual reality. *Scientific Reports*, *13*, 16665.
-> \
-> https://doi.org/10.1038/s41598-023-43523-x
 
 See all publications in the [IRL website](https://www.intangiblerealitieslab.org/publications)
 
