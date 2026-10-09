@@ -4,7 +4,7 @@ draft = false
 title = 'Landing'
 +++
 
-#### interactive Molecular Dynamics in eXtended Reality
+interactive Molecular Dynamics in eXtended Reality
 {.logo}
 
 ![](nanover3.webp)
