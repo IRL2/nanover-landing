@@ -64,3 +64,21 @@ div.highlight:hover .copy-code,
 pre:hover .copy-code {
     display: block;
 }
+
+.announce {
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid lightgray;
+}
+
+.main-video img{
+    width: var(--main-width);
+}
+
+.logo {
+    text-align: center;
+    width: 100%;
+    display: inline-grid;
+}

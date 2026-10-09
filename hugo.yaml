@@ -40,3 +40,9 @@ params:
     apple_touch_icon: "favicon-apple.png"
     safari_pinned_tab: "favicon.svg"
   
+markup:
+  goldmark:
+    parser:
+      attribute:
+        block: true
+        title: true
